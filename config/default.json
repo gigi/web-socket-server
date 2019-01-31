@@ -1,0 +1,25 @@
+{
+  "app": {
+    "hostname": "localhost",
+    "port": 8081
+  },
+  "logger": {
+    "options": {
+      "level": "debug",
+      "silent": false,
+      "exitOnError": false
+    },
+    "transports": [
+      {
+        "handler": "console"
+      },
+      {
+        "handler": "file",
+        "options": {
+          "filename": "runtime/log/combined.log",
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

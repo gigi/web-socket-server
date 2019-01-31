@@ -1,0 +1,6 @@
+{
+  "app": {
+    "hostname": "APP_HOSTNAME",
+    "port": "APP_PORT"
+  }
+}

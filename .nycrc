@@ -1,0 +1,24 @@
+{
+  "extension": [
+    ".ts"
+  ],
+  "exclude": [
+    "test/**/*",
+    "dist/**/*",
+    "build/**/*",
+    "**/*.d.ts",
+    "**/*.js",
+    "src/config/**/*",
+    "**/*Interface.ts"
+  ],
+  "temp-directory": "./build/coverage/.nyc_output",
+  "report-dir": "./build/coverage/report",
+  "all": true,
+  "require": [
+    "ts-node/register"
+  ],
+  "reporter": [
+    "text",
+    "html"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "dependencies": {
+    "class-transformer": "^0.2.0",
+    "dotenv": "^6.0.0",
+    "inversify": "^4.13.0",
+    "inversify-config-injection": "0.0.2",
+    "reflect-metadata": "^0.1.12",
+    "socket.io": "^2.1.1",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.2",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/dotenv": "^4.0.3",
+    "@types/node": "^10.5.7",
+    "@types/reflect-metadata": "^0.1.0",
+    "@types/socket.io": "^1.4.36",
+    "@types/socket.io-client": "^1.4.32",
+    "chai": "latest",
+    "mocha": "^5.2.0",
+    "mocha-typescript": "latest",
+    "nyc": "^12.0.2",
+    "socket.io-client": "latest",
+    "ts-node": "^7.0.0"
+  },
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build": "npm run tslint && rm -rf dist/* && npm run build-ts",
+    "test": "NODE_ENV=test mocha",
+    "cover": "nyc npm run test",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "serve": "node dist/app.js",
+    "watch": "npm run test -- --watch-extensions ts --watch -R min"
+  },
+  "author": "Alexey Snigirev <gigi@ua.fm>"
+}
