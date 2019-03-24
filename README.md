@@ -1,6 +1,8 @@
 # Web Socket Server skeleton
 Production-ready server skeleton based on Socket.io as socket transport and built-in node http server. Powered by TypeScript 
 
+[![Build Status](https://travis-ci.org/gigi/web-socket-server.svg?branch=master)](https://travis-ci.org/gigi/web-socket-server)
+[![Coverage Status](https://coveralls.io/repos/github/gigi/web-socket-server/badge.svg?branch=master)](https://coveralls.io/github/gigi/web-socket-server?branch=master)
 ### Installation
 ```
 git clone https://github.com/gigi/web-socket-server
