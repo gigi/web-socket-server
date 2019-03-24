@@ -37,7 +37,8 @@
     "watch-ts": "tsc -w",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "serve": "node dist/app.js",
-    "watch": "npm run test -- --watch-extensions ts --watch -R min"
+    "watch": "npm run test -- --watch-extensions ts --watch -R min",
+    "coveralls": "npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Alexey Snigirev <gigi@ua.fm>"
 }
