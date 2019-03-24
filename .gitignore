@@ -1,10 +1,14 @@
-/.idea/
-/.vscode/
+.idea/
+.vscode/
 npm-debug.log*
 node_modules/
 runtime/
 !.gitkeep
 
-dist/**/*
-build/**/*
+dist/
+
+/build/**/*
+!/build/coverage/
+!/build/coverage/.gitkeep
+
 config/local*
