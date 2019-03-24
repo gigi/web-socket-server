@@ -9,6 +9,7 @@ dist/
 
 /build/**/*
 !/build/coverage/
-!/build/coverage/.gitkeep
+!/build/coverage/.nyc_output/
+!/build/coverage/.nyc_output/.gitkeep
 
 config/local*
